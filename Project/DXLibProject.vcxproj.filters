@@ -1,0 +1,139 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source">
+      <UniqueIdentifier>{d17497e1-fff2-4e98-9afd-3f045699eeb8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Library">
+      <UniqueIdentifier>{4870638d-cf39-4020-9741-e96f60bbef06}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\System">
+      <UniqueIdentifier>{468b3944-9dee-4cc4-a655-0be16b6f431d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\Application">
+      <UniqueIdentifier>{8dd2ad92-c97b-4f60-846f-14a81341fdc4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\System\Math">
+      <UniqueIdentifier>{2f047af8-b05f-40b8-a289-fb6e5739f57a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\System\FPS">
+      <UniqueIdentifier>{c137c735-81d7-4c42-996b-c806f0958b7c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\Application\SceneManager">
+      <UniqueIdentifier>{d9f62c5d-b348-46aa-aa92-a34265673ef2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\Application\GameScene">
+      <UniqueIdentifier>{5f8ff019-cfeb-4435-894d-4710ccb867d1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\Application\TitleSccene">
+      <UniqueIdentifier>{91a1c64d-1cc7-4104-9fc5-4dd1fef0f40a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\Application\GameScene\Enemy">
+      <UniqueIdentifier>{82c04018-319e-4fcb-b5cb-451732ddd799}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\Application\PlaneGameScene">
+      <UniqueIdentifier>{ea99a7c4-3833-4b3f-8b7d-62cbef2a4099}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\Application\ResourceManager">
+      <UniqueIdentifier>{3679db4a-5d14-4670-b189-ee938678f77b}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Source\main.cpp">
+      <Filter>Source</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\pch.cpp">
+      <Filter>Source</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\System\Math\HOhara_Matrix4x4.cpp">
+      <Filter>Source\System\Math</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\System\Math\HOhara_Vector3.cpp">
+      <Filter>Source\System\Math</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\System\Math\HOhara_Math.cpp">
+      <Filter>Source\System\Math</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\System\FPS\FPSController.cpp">
+      <Filter>Source\System\FPS</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Application\SceneManager\SceneManager.cpp">
+      <Filter>Source\Application\SceneManager</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Application\GameScene\GameScene.cpp">
+      <Filter>Source\Application\GameScene</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Application\TitleScene\TitleScene.cpp">
+      <Filter>Source\Application\TitleSccene</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Application\GameScene\Player.cpp">
+      <Filter>Source\Application\GameScene</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Application\GameScene\Enemy\TestEnemy.cpp">
+      <Filter>Source\Application\GameScene\Enemy</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Application\GameScene\Enemy\EnemyBase.cpp">
+      <Filter>Source\Application\GameScene\Enemy</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Application\PlaneGameScene\PlaneGameScene.cpp">
+      <Filter>Source\Application\PlaneGameScene</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Application\ResourceManager\ModelManager.cpp">
+      <Filter>Source\Application\ResourceManager</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\Library\DxLib.h">
+      <Filter>Library</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\pch.h">
+      <Filter>Source</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\System\Math\HOhara_Vector3.h">
+      <Filter>Source\System\Math</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\System\Math\HOhara_Matrix4x4.h">
+      <Filter>Source\System\Math</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\System\Math\HOhara_Math.h">
+      <Filter>Source\System\Math</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\System\FPS\FPSController.h">
+      <Filter>Source\System\FPS</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\System\Function.h">
+      <Filter>Source\System</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Application\SceneManager\SceneBase.h">
+      <Filter>Source\Application\SceneManager</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Application\SceneManager\SceneManager.h">
+      <Filter>Source\Application\SceneManager</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Application\GameScene\GameScene.h">
+      <Filter>Source\Application\GameScene</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Application\TitleScene\TitleScene.h">
+      <Filter>Source\Application\TitleSccene</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Application\GameScene\Player.h">
+      <Filter>Source\Application\GameScene</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Application\GameScene\Enemy\TestEnemy.h">
+      <Filter>Source\Application\GameScene\Enemy</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Application\GameScene\Enemy\EnemyBase.h">
+      <Filter>Source\Application\GameScene\Enemy</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Application\PlaneGameScene\PlaneGameScene.h">
+      <Filter>Source\Application\PlaneGameScene</Filter>
+    </ClInclude>
+    <ClInclude Include="resource.h" />
+    <ClInclude Include="Source\Application\ResourceManager\ModelManager.h">
+      <Filter>Source\Application\ResourceManager</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="DXLibProject.rc" />
+  </ItemGroup>
+</Project>
