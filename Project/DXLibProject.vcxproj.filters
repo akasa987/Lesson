@@ -35,7 +35,7 @@
       <UniqueIdentifier>{ea99a7c4-3833-4b3f-8b7d-62cbef2a4099}</UniqueIdentifier>
     </Filter>
     <Filter Include="Source\Application\ResourceManager">
-      <UniqueIdentifier>{3679db4a-5d14-4670-b189-ee938678f77b}</UniqueIdentifier>
+      <UniqueIdentifier>{e0a72db0-8efc-4345-b00c-7039bd9336b6}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
   <ItemGroup>
@@ -128,12 +128,8 @@
     <ClInclude Include="Source\Application\PlaneGameScene\PlaneGameScene.h">
       <Filter>Source\Application\PlaneGameScene</Filter>
     </ClInclude>
-    <ClInclude Include="resource.h" />
     <ClInclude Include="Source\Application\ResourceManager\ModelManager.h">
       <Filter>Source\Application\ResourceManager</Filter>
     </ClInclude>
-  </ItemGroup>
-  <ItemGroup>
-    <ResourceCompile Include="DXLibProject.rc" />
   </ItemGroup>
 </Project>

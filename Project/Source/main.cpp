@@ -37,7 +37,7 @@ int WINAPI WinMain( HINSTANCE hInstance, HINSTANCE hPrevInstance,
 		ScreenFlip();
 		fps.Wait();
 	}
-
+	MODEL_MGR.AllDelete();
 	SCENE_MGR.Release();
 
 	DxLib_End();

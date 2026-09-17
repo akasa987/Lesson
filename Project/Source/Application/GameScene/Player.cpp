@@ -83,8 +83,12 @@ void Player::Update()
 	//視点のベクトルを作成
 	mLookVec = HOhara::Vector3(0, 0, 1.0f).Rotate(rotMat);
 
+	HOhara::Vector3 moveVec = inputVec * 0.1f;
+	HOhara::Matrix4x4 mapMat = HOhara::Matrix4x4::Identity();
+	//球とメッシュによる判定
+	HOhara::WallSlideSphere(mMapModelHandle, mapMat, mPos, moveVec, 1.0f);
 	//座標の適用
-	mPos += inputVec * 0.1f;
+	mPos += moveVec;
 
 	mGravity -= 0.01f;
 	HOhara::Vector3 rayLookVec = mPos + (HOhara::Vector3::Down() * 100);
@@ -97,7 +101,7 @@ void Player::Update()
 
 	mPos.y += mGravity;
 
-	//銃の表示位置の行列を設定j
+	//銃の表示位置の行列を設定
 	mGunMat = HOhara::Matrix4x4::Scale(HOhara::Vector3(0.01f, 0.01f, 0.01f)) *
 		HOhara::Matrix4x4::Translate(HOhara::Vector3(0.2f, -0.1f, 0.2f)) *
 		rotMat *

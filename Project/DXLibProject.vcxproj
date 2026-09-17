@@ -192,7 +192,6 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="..\Library\DxLib.h" />
-    <ClInclude Include="resource.h" />
     <ClInclude Include="Source\Application\GameScene\Enemy\EnemyBase.h" />
     <ClInclude Include="Source\Application\GameScene\Enemy\TestEnemy.h" />
     <ClInclude Include="Source\Application\GameScene\GameScene.h" />
@@ -208,9 +207,6 @@
     <ClInclude Include="Source\System\Math\HOhara_Math.h" />
     <ClInclude Include="Source\System\Math\HOhara_Matrix4x4.h" />
     <ClInclude Include="Source\System\Math\HOhara_Vector3.h" />
-  </ItemGroup>
-  <ItemGroup>
-    <ResourceCompile Include="DXLibProject.rc" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

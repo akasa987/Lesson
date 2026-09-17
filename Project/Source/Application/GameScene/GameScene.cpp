@@ -14,7 +14,7 @@ GameScene::~GameScene()
 
 void GameScene::Init()
 {
-	mMapModelHandle = MV1LoadModel("Data/map.mv1");
+	mMapModelHandle = MODEL_MGR.GetModel("Data/map.mv1");
 	int materialNum = MV1GetMaterialNum(mMapModelHandle);
 	for (int i = 0; i < materialNum; i++)
 	{
@@ -46,12 +46,17 @@ void GameScene::Init()
 	mp_TestEnemy = new TestEnemy();
 	mp_TestEnemy->Init();
 	mp_TestEnemy->Load();
+
+	mBGMSoundHandle = LoadSoundMem("Data/BGM.wav");
+	mSESoundHandle = LoadSoundMem("Data/Se.wav");
+	mSE1SoundHandle = DuplicateSoundMem(mSESoundHandle);
+	PlaySoundMem(mBGMSoundHandle, DX_PLAYTYPE_LOOP);
 }
 
 void GameScene::Release()
 {
-	MV1DeleteModel(mMapModelHandle);
-	MV1DeleteModel(mSkyModelHandle);
+	MODEL_MGR.Delete("Data/map.mv1");
+	MODEL_MGR.Delete("Data/SkyBox.mv1");
 	//ƒƒ‚ƒŠ‚ð‰ð•ú
 	mp_Player->Release();
 	delete mp_Player;
@@ -59,6 +64,13 @@ void GameScene::Release()
 	mp_TestEnemy->Release();
 	delete mp_TestEnemy;
 	mp_TestEnemy = nullptr;
+	StopSoundMem(mBGMSoundHandle);
+	StopSoundMem(mSESoundHandle);
+	StopSoundMem(mSE1SoundHandle);
+
+	DeleteSoundMem(mBGMSoundHandle);
+	DeleteSoundMem(mSESoundHandle);
+	DeleteSoundMem(mSE1SoundHandle);
 }
 
 void GameScene::Update()
@@ -71,6 +83,11 @@ void GameScene::Update()
 	}
 	mp_Player->Update();
 	mp_TestEnemy->Update();
+	if (CheckHitKey(KEY_INPUT_P) && !CheckSoundMem(mSE1SoundHandle))
+	{
+		StopSoundMem(mSE1SoundHandle);
+		PlaySoundMem(mSE1SoundHandle, DX_PLAYTYPE_BACK);
+	}
 }
 
 void GameScene::CameraUpdate()

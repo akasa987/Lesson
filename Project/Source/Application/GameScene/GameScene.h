@@ -34,4 +34,8 @@ private:
 	HOhara::Vector3 mPlayerPos;
 	HOhara::Vector3 mPlayerLookVec;
 	HOhara::Vector3 mPlayerRot;
+
+	int mBGMSoundHandle;
+	int mSESoundHandle;
+	int mSE1SoundHandle;
 };
